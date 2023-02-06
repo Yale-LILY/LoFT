@@ -1,0 +1,60 @@
+.
+├── diversity_metrics.py
+├── LogicNLG
+│   ├── all_csv.zip
+│   ├── APIs.py
+│   ├── challenge
+│   │   ├── blind_test_lm_inputs.json
+│   │   └── blind_test_lm_pos_neg.json
+│   ├── data
+│   │   ├── all_csv [16573 entries exceeds filelimit, not opening dir]
+│   │   ├── bootstrap.json
+│   │   ├── freq_list.json
+│   │   ├── full_vocab.json
+│   │   ├── README.md
+│   │   ├── stop_words.json
+│   │   ├── tabfact_bootstrap.json
+│   │   ├── table_to_page.json
+│   │   ├── test_lm.json
+│   │   ├── test_lm_pos_neg.json
+│   │   ├── train_lm.json
+│   │   ├── train_lm_preprocessed.json
+│   │   ├── val_lm.json
+│   │   ├── val_lm_pos_neg.json
+│   │   └── vocab.json
+│   ├── DataLoader.py
+│   ├── evaluate.py
+│   ├── examples.png
+│   ├── GPT2-coarse-to-fine.py
+│   ├── GPT2.py
+│   ├── GPT-distributed.py
+│   ├── LICENSE
+│   ├── LINKING.md
+│   ├── Model.py
+│   ├── NLI_models
+│   │   ├── config.txt
+│   │   └── model_ep4.pt
+│   ├── NLI_models.py
+│   ├── NLI.py
+│   ├── outputs
+│   │   ├── field_infusing.json
+│   │   ├── GPT_gpt2_12.65.json
+│   │   └── GPT_gpt2_C2F_13.35.json
+│   ├── parse_programs.py
+│   ├── parser_models
+│   │   └── model.pt
+│   ├── parser.py
+│   ├── program_outputs
+│   │   ├── field_infusing.json
+│   │   ├── GPT_gpt2_12.65.json
+│   │   └── GPT_gpt2_C2F_13.35.json
+│   ├── README.md
+│   ├── tensorboard
+│   │   └── README.md
+│   ├── Transformer.py
+│   └── utils.py
+├── prepare_tapex_evaluation_data.py
+├── README.md
+├── TAPEX_Acc.py
+└── tmp
+    └── test.json

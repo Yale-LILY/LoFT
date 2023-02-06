@@ -1,0 +1,148 @@
+.
+├── bart.large
+│   ├── dict.src.txt
+│   ├── dict.tgt.txt
+│   ├── dict.txt
+│   ├── encoder.json
+│   ├── model.pt
+│   ├── NOTE
+│   └── vocab.bpe
+├── fairseq_dev
+│   ├── CODE_OF_CONDUCT.md
+│   ├── CONTRIBUTING.md
+│   ├── docs [21 entries exceeds filelimit, not opening dir]
+│   ├── examples [64 entries exceeds filelimit, not opening dir]
+│   ├── fairseq [37 entries exceeds filelimit, not opening dir]
+│   ├── fairseq_cli
+│   │   ├── eval_lm.py
+│   │   ├── generate.py
+│   │   ├── hydra_train.py
+│   │   ├── __init__.py
+│   │   ├── interactive.py
+│   │   ├── preprocess.py
+│   │   ├── score.py
+│   │   ├── train.py
+│   │   └── validate.py
+│   ├── hubconf.py
+│   ├── LICENSE
+│   ├── pyproject.toml
+│   ├── README.md
+│   ├── scripts
+│   │   ├── average_checkpoints.py
+│   │   ├── build_sym_alignment.py
+│   │   ├── compare_namespaces.py
+│   │   ├── compound_split_bleu.sh
+│   │   ├── constraints
+│   │   │   ├── extract.py
+│   │   │   └── validate.py
+│   │   ├── convert_dictionary.lua
+│   │   ├── convert_model.lua
+│   │   ├── count_docs.py
+│   │   ├── __init__.py
+│   │   ├── read_binarized.py
+│   │   ├── rm_pt.py
+│   │   ├── sacrebleu.sh
+│   │   ├── shard_docs.py
+│   │   ├── split_train_valid_docs.py
+│   │   ├── spm_decode.py
+│   │   ├── spm_encode.py
+│   │   ├── spm_train.py
+│   │   └── test_fsdp.sh
+│   ├── setup.cfg
+│   ├── setup.py
+│   ├── tests [57 entries exceeds filelimit, not opening dir]
+│   └── train.py
+├── file_structure.txt
+├── LoFT_predict
+│   ├── evaluation.json
+│   ├── inference_raw.txt
+│   ├── inference_verifier_input.json
+│   └── inference_with_verification_result.json
+├── LoFT_verifier.py
+├── prepare_evaluation_data.py
+├── prepare_verifier_input.py
+├── processed_dataset
+│   ├── bart.large
+│   │   └── bin
+│   │       ├── dict.src.txt
+│   │       ├── dict.tgt.txt
+│   │       ├── preprocess.log
+│   │       ├── test.src-tgt.src.bin
+│   │       ├── test.src-tgt.src.idx
+│   │       ├── test.src-tgt.tgt.bin
+│   │       ├── test.src-tgt.tgt.idx
+│   │       ├── train.src-tgt.src.bin
+│   │       ├── train.src-tgt.src.idx
+│   │       ├── train.src-tgt.tgt.bin
+│   │       ├── train.src-tgt.tgt.idx
+│   │       ├── valid.src-tgt.src.bin
+│   │       ├── valid.src-tgt.src.idx
+│   │       ├── valid.src-tgt.tgt.bin
+│   │       └── valid.src-tgt.tgt.idx
+│   ├── test.bpe.src
+│   ├── test.bpe.tgt
+│   ├── test.src
+│   ├── test.tgt
+│   ├── train.bpe.src
+│   ├── train.bpe.tgt
+│   ├── train.src
+│   ├── train.tgt
+│   ├── valid.bpe.src
+│   ├── valid.bpe.tgt
+│   ├── valid.src
+│   └── valid.tgt
+├── processed_LoFT_data
+│   ├── LoFT_dev_data.json
+│   ├── LoFT_inference_input.json
+│   ├── LoFT_train_data.json
+│   └── LoFT_train_input.json
+├── process_LoFT_data.py
+├── README.md
+├── requirements.txt
+├── run_LoFT.py
+├── run_tabfact.sh
+├── run_verifier.py
+├── tapex
+│   ├── common
+│   │   ├── dbengine.py
+│   │   ├── download.py
+│   │   └── __init__.py
+│   ├── data_utils
+│   │   ├── format_converter.py
+│   │   ├── preprocess_binary.py
+│   │   └── preprocess_bpe.py
+│   ├── model_eval.py
+│   ├── model_interface.py
+│   ├── processor
+│   │   ├── __init__.py
+│   │   ├── table_linearize.py
+│   │   ├── table_processor.py
+│   └── └── table_truncate.py
+└── verifier_exp
+    ├── all_results.json
+    ├── checkpoint-5000
+    │   ├── config.json
+    │   ├── merges.txt
+    │   ├── optimizer.pt
+    │   ├── pytorch_model.bin
+    │   ├── rng_state.pth
+    │   ├── scheduler.pt
+    │   ├── special_tokens_map.json
+    │   ├── tokenizer_config.json
+    │   ├── trainer_state.json
+    │   ├── training_args.bin
+    │   └── vocab.json
+    ├── config.json
+    ├── eval_results.json
+    ├── merges.txt
+    ├── pytorch_model.bin
+    ├── README.md
+    ├── runs
+    ├── special_tokens_map.json
+    ├── tokenizer_config.json
+    ├── trainer_state.json
+    ├── training_args.bin
+    ├── train_results.json
+    └── vocab.json
+
+27 directories, 138 files

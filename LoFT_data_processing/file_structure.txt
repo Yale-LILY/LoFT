@@ -1,0 +1,147 @@
+.
+├── data
+│   ├── logic2text
+│   │   ├── all_data.json
+│   │   ├── all_template_envelopes.json
+│   │   ├── split_by_type
+│   │   │   ├── aggregation.json
+│   │   │   ├── comparative.json
+│   │   │   ├── count.json
+│   │   │   ├── majority.json
+│   │   │   ├── ordinal.json
+│   │   │   ├── superlative.json
+│   │   │   └── unique.json
+│   │   └── template_envelopes
+│   │       ├── aggregation_tpl.json
+│   │       ├── comparative_tpl.json
+│   │       ├── count_tpl.json
+│   │       ├── majority_tpl.json
+│   │       ├── ordinal_tpl.json
+│   │       ├── superlative_tpl.json
+│   │       └── unique_tpl.json
+│   └── logicnlg
+│       ├── all_csv [16573 entries exceeds filelimit, not opening dir]
+│       ├── all_lm_simplified.json
+│       ├── replace_dictionary.json
+│       ├── test_lm.json
+│       ├── train_lm.json
+│       └── trigger_word_all.json
+├── file_structure.txt
+├── inference
+│   ├── modules
+│   │   └── templatize.py
+│   ├── out
+│   │   ├── candidate_logic_forms [862 entries exceeds filelimit, not opening dir]
+│   │   ├── candidate_logic_forms_translated [862 entries exceeds filelimit, not opening dir]
+│   │   └── LoFT_inference_input.json
+│   └── scripts
+│       └── run_instantiate.py
+├── README.md
+├── train
+│   ├── modules
+│   │   ├── funcs.py
+│   │   └── prog2lf.py
+│   ├── out
+│   │   ├── data_shard [90 entries exceeds filelimit, not opening dir]
+│   │   ├── data_shard_with_dep [90 entries exceeds filelimit, not opening dir]
+│   │   ├── LoFT_train_input.json
+│   │   ├── processed_sasp_results [90 entries exceeds filelimit, not opening dir]
+│   │   ├── processed_sasp_results_lf [90 entries exceeds filelimit, not opening dir]
+│   │   ├── prog2lf_error_log.out
+│   │   ├── sasp_results [90 entries exceeds filelimit, not opening dir]
+│   │   ├── tables.jsonl
+│   │   ├── train_csv_ids.txt
+│   │   ├── train_lm_tokenized.json
+│   │   ├── train_lm_tokenized.tagged
+│   │   ├── validation_records [90 entries exceeds filelimit, not opening dir]
+│   │   └── valid_lf [90 entries exceeds filelimit, not opening dir]
+│   ├── SASP
+│   │   ├── nsm
+│   │   │   ├── actor.py
+│   │   │   ├── computer_factory.py
+│   │   │   ├── consistency_utils.py
+│   │   │   ├── data_utils.py
+│   │   │   ├── env_factory.py
+│   │   │   ├── evaluator.py
+│   │   │   ├── execution
+│   │   │   │   ├── executor_factory.py
+│   │   │   │   ├── __init__.py
+│   │   │   │   ├── type_system.py
+│   │   │   │   └── worlds
+│   │   │   │       ├── __init__.py
+│   │   │   │       ├── wikisql.py
+│   │   │   │       └── wikitablequestions.py
+│   │   │   ├── __init__.py
+│   │   │   ├── learner.py
+│   │   │   ├── nn_util.py
+│   │   │   ├── parser_module
+│   │   │   │   ├── agent.py
+│   │   │   │   ├── bert_decoder.py
+│   │   │   │   ├── bert_encoder.py
+│   │   │   │   ├── decoder.py
+│   │   │   │   ├── encoder.py
+│   │   │   │   ├── __init__.py
+│   │   │   │   ├── sequence_util.py
+│   │   │   │   ├── sketch_guided_agent.py
+│   │   │   │   ├── sketch_guided_decoder.py
+│   │   │   │   ├── table_bert_helper.py
+│   │   │   │   └── table_bert_proxy.py
+│   │   │   ├── program_cache.py
+│   │   │   ├── replay_buffer.py
+│   │   │   ├── schema.py
+│   │   │   └── sketch
+│   │   │       ├── __init__.py
+│   │   │       ├── sketch_encoder.py
+│   │   │       ├── sketch_predictor.py
+│   │   │       ├── sketch.py
+│   │   │       └── trainer.py
+│   │   ├── README.md
+│   │   ├── runs
+│   │   │   └── demo_run
+│   │   │       ├── config.json
+│   │   │       └── model.best.bin
+│   │   ├── run_sasp.sh
+│   │   ├── table
+│   │   │   ├── experiments.py
+│   │   │   ├── random_explore.py
+│   │   │   ├── tabfact
+│   │   │   │   ├── gen_with_func.py
+│   │   │   │   ├── preprocess_example.py
+│   │   │   │   ├── preprocess_logicnlg.py
+│   │   │   │   └── run_processing_logicnlg.sh
+│   │   │   ├── utils.py
+│   │   │   └── wtq
+│   │   │       ├── evaluator.py
+│   │   │       └── __init__.py
+│   │   └── table_bert
+│   │       ├── config.py
+│   │       ├── dataset.py
+│   │       ├── __init__.py
+│   │       ├── input_formatter.py
+│   │       ├── table_bert.py
+│   │       ├── table.py
+│   │       ├── utils.py
+│   │       ├── vanilla_table_bert.py
+│   │       └── vertical
+│   │           ├── config.py
+│   │           ├── dataset.py
+│   │           ├── __init__.py
+│   │           ├── input_formatter.py
+│   │           └── vertical_attention_table_bert.py
+│   └── scripts
+│       ├── run_post_processing_sasp_result.sh
+│       ├── run_process_sasp_results.py
+│       ├── run_transform_programs_to_lf.py
+│       └── run_validate_sasp_results.py
+├── translate
+│   ├── modules
+│   │   └── logictools
+│   │       ├── APIs.py
+│   │       ├── __init__.py
+│   │       ├── TreeNode.py
+│   │       └── utils.py
+│   └── scripts
+│       └── run_translate.py
+└── utils
+    ├── APIs.py
+    └── LoFTPaths.py
