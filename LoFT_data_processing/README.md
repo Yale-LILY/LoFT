@@ -7,8 +7,9 @@ unzip data.zip
 ```
 
 ## 1. Prepare LoFT Training Data
-
-![image-20230129124328655](imgs/image-20230129124328655.png)
+<p align="center">
+<img src="imgs/image-20230129124328655.png" width="600">
+</p>
 
 ### 1.1 Run SASP
 We reproduced [SASP](https://github.com/ousuixin/SASP) to parse each statement in the LogicNLG training set to its corresponding logic form. To run SASP, you need to install [CoreNLP 4.5.2 version](https://stanfordnlp.github.io/CoreNLP/download.html);  download [SASP's model checkpoint](https://drive.google.com/file/d/1TyleYW54hLJp8ZaC13vD33BJQnVPvbnF/view?usp=sharing) and save it as `train/SASP/runs/demo_run/model.best.bin`. 
@@ -34,8 +35,9 @@ bash run_post_processing_sasp_result.sh
 ```
 
 ## 2. Prepare LoFT Inference Data
-
-![image-20230129124451441](imgs/image-20230129124451441.png)
+<p align="center">
+<img src="imgs/image-20230129124451441.png" width="800">
+</p>
 
 Go to `inference/scripts`, run
 

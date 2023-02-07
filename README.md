@@ -1,5 +1,5 @@
 # LoFT
-The data and code for EACL 2023 paper [LoFT: Enhancing Faithfulness and Diversity for Table-to-Text Generation via Logic Form Control](), which applies logical forms as fact checkers and content planners to improve faithfulness and diversity of logical table-to-text generation simultaneously.
+The data and code for EACL 2023 paper [LoFT: Enhancing Faithfulness and Diversity for Table-to-Text Generation via Logic Form Control](https://arxiv.org/abs/2302.02962), which applies logical forms as fact checkers and content planners to improve faithfulness and diversity of logical table-to-text generation simultaneously.
 <p align="center">
 <img src="model_view.jpg" width="800">
 </p>
@@ -29,6 +29,6 @@ For any issues or questions, kindly email us at: Yilun Zhao (yilun.zhao@yale.edu
     month = may,
     year = "2023",
     publisher = "Association for Computational Linguistics",
-    url = ""
+    url = "https://arxiv.org/pdf/2302.02962.pdf"
 }
 ```
